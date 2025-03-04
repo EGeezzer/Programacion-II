@@ -12,11 +12,7 @@ def dibujar_figuras():
     # Dibuja una línea
     ax.plot([100, 200], [600, 500], color='black', linewidth=2)
     
-    # Dibuja un rectángulo (descomenta si lo necesitas)
-    # rect = patches.Rectangle((300, 500), 100, 100, linewidth=2, edgecolor='black', facecolor='none')
-    # ax.add_patch(rect)
-    
-    # Dibuja una elipse (óvalo)
+    # Dibuja un óvalo
     oval = patches.Ellipse((450, 550), 100, 100, linewidth=2, edgecolor='black', facecolor='none')
     ax.add_patch(oval)
     
