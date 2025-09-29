@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Practica_4;
+public abstract class Empleado {
+    protected String nombre;
 
-/**
- *
- * @author PC
- */
-public class Empleado {
-    
+    public Empleado(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public abstract double CalcularSalarioMensual();
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre;
+    }
 }
+
+
+
