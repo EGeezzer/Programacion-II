@@ -140,12 +140,12 @@ public class VentanaPrincipal extends JFrame {
     }
 
     public static void main(String[] args) {
-        // CORRECCIÓN: Usar getSystemLookAndFeelClassName() en lugar de getSystemLookAndFeel()
+      
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
             try {
-                // Fallback a Nimbus si el look and feel del sistema falla
+              
                 UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
             } catch (Exception ex) {
                 ex.printStackTrace();
@@ -156,4 +156,5 @@ public class VentanaPrincipal extends JFrame {
             new VentanaPrincipal().setVisible(true);
         });
     }
+
 }
